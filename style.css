@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#search_bar{
+  border-radius: 10px !important; 
+}
+#search_bar>input{
+    width:40vw;
+    border:none;
+    padding:10px;
+    background-color: transparent;
+}
+#hero-section{
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    object-fit: fill;
+}
+#hero-section > img{
+    width: 85vw;
+}
+#categories-list{
+    display:flex;
+    flex-wrap:wrap;
+    width: 85vw;
+    margin:auto;
+    justify-content:space-between;
+}
+#categories-list>img{
+    width: 128px;
+    height: 188.23529411764704;
+}
+.scrollable_div{
+    width:85vw;
+    margin:auto;
+    overflow:hidden;
+}
+.list{
+    text-wrap: nowrap;
+    overflow-x: scroll;
+    width:100%;
+}
+.list>img{
+    margin-left:20px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.my-card{
+    width:180px;
+    margin-right:20px;
+    display: inline-block !important;
+}
+.my-card>img{
+    margin:auto;
+}
+.time_taken{
+    font-size: 10px;
+    background-color: #f8f8f8;
+    font-weight:800;
+    width:fit-content;
+    padding:2px 5px;
+    border-radius:5px;
+}
+.product_name{
+    font-size:14px;
+    font-weight: 600;
+   
+}
+.product_weight{
+  font-size: 14px;
+  color:gray;
+  margin-top:5px;
+  
+}
+.product_price{
+    margin:0 !important;
+    padding:0 !important;
+    font-weight: 600;
+}
+footer {
+    width: 100vw;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
+  
+  @media screen and (max-width:500px) {
+      #hero-section{
+          display: none;
+      }
+      nav{
+          flex-direction: column;
+      }
+  
+      #delivery-div{
+          border: none !important;
+      }
+      #search_bar{
+          display: flex;
+          align-items: center;
+      }
+      #search_bar>input{
+          width: 80vw;
+      }
+      .scrollable_div{
+          margin-top: 50px;
+      }
+  
+      #footer_r3{
+          width: 90%;
+          text-align: justify;
+      }
+      #footer_r2{
+          flex-direction: column;
+      }
+      #footer_r2>p{
+          width: 100%;
+          text-align: justify;
+      }
+      #social-icons{
+          margin-top: 20px;
+      }
+      #footer_r1{
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      #useful_links,#categories_links{
+          width: 100%;
+      }
+  
+      td{
+          text-align: center;
+      }
+  }
